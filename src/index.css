@@ -9,3 +9,18 @@ body {
     color: #fff;
     font-family: 'Outfit', sans-serif;
 }
+.sectionTitle {
+    position: relative;
+}
+.sectionTitle h1 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+    padding: 0 30px;
+}
+.sectionTitle img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}

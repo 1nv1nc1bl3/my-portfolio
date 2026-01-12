@@ -1,17 +1,14 @@
-import theme_pattern from '../../assets/theme_pattern.svg';
-import profile_img from '../../assets/profile_img.svg';
+import about_profile from '../../assets/about_profile.svg';
+import SectionTitle from '../SectionTitle.jsx';
 import './About.css';
 
 export default function About() {
     return (
         <div className='about'>
-            <div className='about-title'>
-                <h1>About Me</h1>
-                <img src={theme_pattern} alt='About Image' />
-            </div>
+            <SectionTitle title='About Me' />
             <div className='about-sections'>
                 <div className='about-left'>
-                    <img src={profile_img} alt='' />
+                    <img src={about_profile} alt='About Image' />
                 </div>
                 <div className='about-right'>
                     <div className='about-para'>
@@ -61,17 +58,17 @@ export default function About() {
                 </div>
             </div>
             <div className='about-achievements'>
-                <div className='about-achieve'>
+                <div className='about-achievement'>
                     <h1>10+</h1>
-                    <p>years of wxperience</p>
+                    <p>years of experience</p>
                 </div>
                 <hr />
-                <div className='about-achieve'>
+                <div className='about-achievement'>
                     <h1>90+</h1>
                     <p>projects completed</p>
                 </div>
                 <hr />
-                <div className='about-achieve'>
+                <div className='about-achievement'>
                     <h1>15+</h1>
                     <p>happy clients</p>
                 </div>
