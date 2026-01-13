@@ -5,7 +5,7 @@ import SectionTitle from '../SectionTitle.jsx';
 
 export default function MyWork() {
     return (
-        <div className='mywork'>
+        <div id='work' className='mywork'>
             <SectionTitle title='My Latest Work' />
             <div className='mywork-container'>
                 {mywork_data.map((work) => (

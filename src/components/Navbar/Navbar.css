@@ -22,3 +22,22 @@
 .nav-connect:hover {
     transform: scale(1.05);
 }
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.nav-menu li img {
+    /* position: absolute; */
+    /* right: 0; */
+    display: flex;
+    margin: auto;
+    /* width: 100%; */
+    /* z-index: -1; */
+}
+.anchor-link {
+    color: #fff;
+    text-decoration: none;
+}

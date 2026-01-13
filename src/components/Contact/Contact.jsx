@@ -5,8 +5,31 @@ import location_icon from '../../assets/location_icon.svg';
 import call_icon from '../../assets/call_icon.svg';
 
 export default function Contact() {
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append('access_key', 'da39c4fa-f806-4095-a44f-f39b610b9fb4');
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+            },
+            body: json,
+        }).then((res) => res.json());
+
+        if (res.success) {
+            alert('Your message has been sent successfully');
+        }
+    };
+
     return (
-        <div className='contact'>
+        <div id='contact' className='contact'>
             <SectionTitle title='Get in Touch' />
             <div className='contact-section'>
                 <div className='contact-left'>
@@ -36,22 +59,22 @@ export default function Contact() {
                     </div>
                 </div>
 
-                <form action='' className='contact-right'>
+                <form onSubmit={onSubmit} className='contact-right'>
                     <input
                         type='text'
-                        placeholder='Enter your name'
                         name='name'
+                        placeholder='Enter your name'
                     />
                     <input
                         type='email'
-                        placeholder='Enter your email*'
                         name='email'
+                        placeholder='Enter your email*'
                         required
                     />
                     <textarea
+                        rows='8'
                         name='message'
                         placeholder='Share your thoughts'
-                        rows='12'
                     ></textarea>
                     <button type='submit' className='contact-submit'>
                         Send

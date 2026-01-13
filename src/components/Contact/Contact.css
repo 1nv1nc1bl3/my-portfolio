@@ -57,13 +57,16 @@
     height: 78px;
     padding-left: 20px;
     border-radius: 4px;
-    background: #32323c;
+    background: #32323c !important;
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
-    /* color: #d8d8d8; */
+    border: none;
+    outline: none;
+    color: #d8d8d8;
 }
 .contact-right textarea {
     padding-top: 10px;
+    height: auto;
 }
 .contact-submit {
     border: none;

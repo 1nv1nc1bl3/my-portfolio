@@ -4,7 +4,7 @@ import user_icon from '../../assets/user_icon.svg';
 
 export default function Footer() {
     const dateNow = new Date();
-    console.log(dateNow);
+    // console.log(dateNow);
     return (
         <div className='footer'>
             <div className='footer-top'>
