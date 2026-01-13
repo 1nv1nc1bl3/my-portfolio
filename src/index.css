@@ -13,7 +13,7 @@ body {
 .sectionTitle {
     position: relative;
 }
-.sectionTitle h1 {
+.sectionTitle h2 {
     font-size: 80px;
     line-height: 80px;
     font-weight: 600;

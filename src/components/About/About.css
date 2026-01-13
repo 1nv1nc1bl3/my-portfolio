@@ -79,7 +79,7 @@
     transition: 0.5s;
     cursor: default;
 }
-.about-achievement h1 {
+.about-achievement h2 {
     font-size: 60px;
     font-weight: 700;
     background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);

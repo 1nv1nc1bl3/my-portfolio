@@ -59,17 +59,17 @@ export default function About() {
             </div>
             <div className='about-achievements'>
                 <div className='about-achievement'>
-                    <h1>10+</h1>
+                    <h2>10+</h2>
                     <p>years of experience</p>
                 </div>
                 <hr />
                 <div className='about-achievement'>
-                    <h1>90+</h1>
+                    <h2>90+</h2>
                     <p>projects completed</p>
                 </div>
                 <hr />
                 <div className='about-achievement'>
-                    <h1>15+</h1>
+                    <h2>15+</h2>
                     <p>happy clients</p>
                 </div>
             </div>
