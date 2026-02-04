@@ -31,13 +31,14 @@
     width: 419px;
     height: 280px;
     cursor: pointer;
-    border: 4px solid transparent;
+    /* border: 4px solid transparent; */
+    outline: 4px solid transparent;
     border-radius: 10px;
     transition: 0.3s;
 }
 .mywork-container img:hover {
     transform: scale(1.1);
-    border-color: #ff00ff;
+    outline-color: #ff00ff;
 }
 .mywork-showmore {
     display: flex;
